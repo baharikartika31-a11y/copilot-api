@@ -4,9 +4,9 @@ services:
   copilot-api:
     build: .
     ports:
-      - "8080:8080"
+      - "4141:4141"
     environment:
-      - GH_TOKEN={GH_TOKEN}
+      - GH_TOKEN=${GH_TOKEN}
     volumes:
       - ./copilot-data:/root/.local/share/copilot-api
     restart: unless-stopped
